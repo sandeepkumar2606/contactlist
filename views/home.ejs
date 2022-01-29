@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <script src="https://kit.fontawesome.com/69891a8400.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+    <h1 id='page-heading'>
+        <i class="fas fa-address-book"></i>
+        My Contacts List
+    </h1>
+
+    <form action="/create-contact" method="post" id="form-div">
+        <input type="text" name="name" placeholder="Enter name" required>
+        <input type="number" name="contact" placeholder="Enter phone number" required>
+        <button type="submit" id="add-button">Add Contact</button>
+    </form>
+
+
+    <div id="container">
+        <ul>
+            <% for(let i of contact_list) { %>
+                <li style="list-style: none;">
+                    <span>
+                        <%= i.name %>
+                    </span>
+
+                    <span>
+                        <%= i.contact %>
+
+                            <!-- <a href="/delete-contact?contact=<%= i.contact %>&name=<%= i.name %>" style="margin-left: 1.2rem;">  this line is used when we are not using database so in database line we send the id for deleting the contact-->
+                            <a href="/delete-contact?id=<%= i._id %>" style="margin-left: 1.2rem;">
+                                <i class="fas fa-trash" style="color: red;" id="deleteicon"></i>
+                            </a>
+                    </span>
+
+                </li>
+
+
+                <%}%>
+        </ul>
+    </div>
+
+
+    <script type="text/javascript" src="/js/home.js"></script>
+</body>
+
+</html>

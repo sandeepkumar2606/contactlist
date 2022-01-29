@@ -1,0 +1,98 @@
+body
+{
+    background-color: rgb(99 100 110);
+}
+
+#page-heading
+{
+    text-align:center;
+    color:#f2efeffa;
+    font-family: sans-serif;
+    font-size: 3.5rem;
+    background-color: rgb(23 23 33);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0px 10px 10px 10px rgba(12, 12, 22, 0.3);
+
+}
+
+#form-div
+{
+    text-align: center;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#form-div input
+{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    box-shadow: 0px 0px 5px 5px rgba(207, 203, 203, 0.3);
+
+}
+
+#add-button
+{
+    font-size: 1.5rem;
+    background-color: rgb(107, 106, 106);
+    color: white;
+    padding: 0.5rem;
+    margin:1rem;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all ease-in-out 0.3s;
+    box-shadow: 0px 0px 10px 10px rgba(30, 10, 77, 0.3);
+
+}
+
+#add-button:hover
+{
+    background-color: rgb(37, 43, 73);
+    transform: scale(1.05) translateY(2px);
+
+}
+
+
+#container li
+{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px 5px rgba(17, 11, 65, 0.3);
+
+}
+
+#container li 
+{
+    text-align: center;
+    background-color: rgb(14, 40, 66);
+    padding: 0.5rem;
+    margin: 1rem;
+    width: 710px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+    margin-left: 19%;
+    border-radius: 7px;
+    transition: all ease-in-out 0.2s;
+}
+
+#container li:hover
+{
+    background-color: rgb(10, 8, 41);
+    transform: scale(1.05) translateY(2px);
+
+}
+
+#deleteicon
+{
+    margin-right: 0.3rem;
+}
+
+#deleteicon:hover
+{
+    transform: scale(1.4) translateY(2px);
+}
